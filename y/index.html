@@ -8,7 +8,7 @@
     <meta name="description" content="The best fishing charter in the Sarasota, St. Pete Area.
       We have a variety of different trips to pick from.  Visit our site to learn more!">
     <link rel="stylesheet" href="style.css">
-    <title>Best Catch Fishing</title>
+    <title>Best Catch Fishing Florida</title>
     <script src="./mobileMenu.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
@@ -18,20 +18,20 @@
     <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-analytics.js"></script>
 
     <script>
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    var firebaseConfig = {
-        apiKey: "AIzaSyCSmg5tTViUu3w38TzcPkBOLkWF5VJNiMo",
-        authDomain: "best-catch-fishing-florida.firebaseapp.com",
-        projectId: "best-catch-fishing-florida",
-        storageBucket: "best-catch-fishing-florida.appspot.com",
-        messagingSenderId: "342725400618",
-        appId: "1:342725400618:web:b4f9f7ce520bd7e1b0cb53",
-        measurementId: "G-T82ZYRBK14"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        var firebaseConfig = {
+            apiKey: "AIzaSyCSmg5tTViUu3w38TzcPkBOLkWF5VJNiMo",
+            authDomain: "best-catch-fishing-florida.firebaseapp.com",
+            projectId: "best-catch-fishing-florida",
+            storageBucket: "best-catch-fishing-florida.appspot.com",
+            messagingSenderId: "342725400618",
+            appId: "1:342725400618:web:b4f9f7ce520bd7e1b0cb53",
+            measurementId: "G-T82ZYRBK14"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
     </script>
 </head>
 
@@ -42,13 +42,14 @@
     </div>
 
     <nav class="flex-center">
-        <img src="./media/logo.png" alt="logo" id="logo">
+        <img src="./media/logo-min.png" alt="logo" id="logo">
         <div id="nav-links" class="flex-center">
-            <a target="_blank" href="https://square.site/book/52S7Q95WRDXSE/best-catch-fishing-charters-llc">Book Now</a>
+            <a target="_blank" href="https://square.site/book/52S7Q95WRDXSE/best-catch-fishing-charters-llc">Book
+                Now</a>
             <a onclick="closeMenu()" href="#trips-section">Trips</a>
             <a onclick="closeMenu()" href="#price-section">Pricing</a>
-            <a onclick="closeMenu()" href="">Gallery</a>
-            <a onclick="closeMenu()" href="">About Us</a>
+            <a onclick="closeMenu()" href="#gallery-heading">Gallery</a>
+            <a onclick="closeMenu()" href="#about-us-heading">About Us</a>
         </div>
         <img onclick="showMenu()" src="./media/icons/menu.svg" alt="menu icon" id="menu">
     </nav>
@@ -56,8 +57,8 @@
         <a target="_blank" href="https://square.site/book/52S7Q95WRDXSE/best-catch-fishing-charters-llc">Book Now</a>
         <a onclick="closeMenu()" href="#trips-section">Trips</a>
         <a onclick="closeMenu()" href="#price-section">Pricing</a>
-        <a href="">Gallery</a>
-        <a href="">About Us</a>
+        <a href="#gallery-heading">Gallery</a>
+        <a href="#about-us-heading">About Us</a>
         <span onclick="closeMenu()">Close</span>
     </div>
 
@@ -73,7 +74,7 @@
     <div id="trips-section">
         <h2 id="trips" class="section-title text-center">Trip Types</h2>
         <div class="trip-showcase">
-            <div class="bk-img" style="background-image: url(./media/IMG-3285.JPEG);"></div>
+            <div class="bk-img" style="background-image: url(./media/IMG-3285-min.JPEG);"></div>
             <div class="trip-bottom">
                 <div class="trip-banner flex-center">
                     <img src="./media/icons/sail-boat.svg" alt="boat icon">
@@ -82,126 +83,160 @@
                 <h3>Consulting Trip</h3>
                 <p>Basically share all the knowledge I can in the allotted time we have to
                     catch the most and best fish in the areas/depth they want to fish.</p>
-                    <a href="https://square.site/book/52S7Q95WRDXSE/best-catch-fishing-charters-llc"
+                <a href="https://square.site/book/52S7Q95WRDXSE/best-catch-fishing-charters-llc"
                     class="book-button">Book a Trip</a>
-                </div>
             </div>
-            
-            <div class="trip-showcase">
-                <div class="bk-img" style="background-image: url(./media/IMG-2036.png);"></div>
-                <div class="trip-bottom">
-                    <div class="trip-banner flex-center">
-                        <img src="./media/icons/sail-boat.svg" alt="boat icon">
-                        <h3 class="trip-title text-center">Overnight Trip</h3>
-                    </div>
-                    <h3>Overnight Trip</h3>
-                    <p>Night trips especially around new moon and around
-                        Full moon are very peaceful abd cool out and we tend to catch a ton of mangrove and other snapper at
-                        night </p>
-                        <a href="https://square.site/book/52S7Q95WRDXSE/best-catch-fishing-charters-llc"
-                        class="book-button">Book a Trip</a>
-                    </div>
+        </div>
+
+        <div class="trip-showcase">
+            <div class="bk-img" style="background-image: url(./media/IMG-2036-min.JPEG);"></div>
+            <div class="trip-bottom">
+                <div class="trip-banner flex-center">
+                    <img src="./media/icons/sail-boat.svg" alt="boat icon">
+                    <h3 class="trip-title text-center">Overnight Trip</h3>
                 </div>
+                <h3>Overnight Trip</h3>
+                <p>Night trips especially around new moon and around
+                    Full moon are very peaceful abd cool out and we tend to catch a ton of mangrove and other snapper at
+                    night </p>
+                <a href="https://square.site/book/52S7Q95WRDXSE/best-catch-fishing-charters-llc"
+                    class="book-button">Book a Trip</a>
             </div>
-            
-            <div class="trip-showcase">
-                <div class="bk-img" style="background-image: url(./media/Nov2/IMG_18211.jpg);"></div>
-                <div class="trip-bottom">
-                    <div class="trip-banner flex-center">
-                        <img src="./media/icons/sail-boat.svg" alt="boat icon">
-                        <h3 class="trip-title text-center">Sight Seeing</h3>
-                    </div>
-                    <h3>Sight Seeing</h3>
-                    <ul>
-                        <li>Whale Shark Searching</li>
-                        <li>Dolphin Sight Seeing</li>
-                        <li>Whake Sight Seeing</li>
-                    </ul>
-                    <p>Sightseeing is usually dolphins and manatees and possibly turtles as well as lots of nice houses and
-                        celebrity houses. Also offer real estate viewing trips from the water. Great way to find waterfront
-                        properties.</p>
-                        <a href="https://square.site/book/52S7Q95WRDXSE/best-catch-fishing-charters-llc" class="book-button">Book a
-                            Trip</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="trip-showcase">
-                    <div class="bk-img" style="background-image: url(./media/Nov2/IMG_42721.jpg);"></div>
-                    <div class="trip-bottom">
-                        <div class="trip-banner flex-center">
-                            <img src="./media/icons/sail-boat.svg" alt="boat icon">
-                            <h3 class="trip-title text-center">Vacation Trips</h3>
-                        </div>
-                        <h3>Vacation Trips</h3>
-                        <p>Destination or vacation trips need to be discussed over the phone as they take a lot of planning but can
-                            be super exciting and can include multiple days offshore in the middle grounds or dry tortugas.</p>
-                            <a href="https://square.site/book/52S7Q95WRDXSE/best-catch-fishing-charters-llc" class="book-button">Book a
-                                Trip</a>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!--PRICING-->
-                    <h2 id="trips" class="section-title text-center">Pricing</h2>
-                    <div id="price-section" class="price-section flex-center">
-                        <div class="price-showcase">
-                            <h3 class="text-center">1/2 Day</h3>
-                            <div class="price-info">
-                                <span class="text-center">$595</span>
-                                <p class="text-center">1/2 day is a 4 hour trip that we target all types of species and can run up 15 miles or so offshore depending on the seas.</p>
-                            </div>
-                        </div>
+        </div>
+    </div>
 
-                        <div class="price-showcase">
-                            <h3 class="text-center">3/4 Day</h3>
-                            <div class="price-info">
-                                <span class="text-center">$895</span>
-                                <p class="text-center">The 3/4 day is a 6 hour minimum trip that we usually catch bottom fish like Red and Gag Grouper as well as lots of various types of snapper.</p>
-                            </div>
-                        </div>
+    <div class="trip-showcase">
+        <div class="bk-img" style="background-image: url(./media/IMG_18211-min.jpg);"></div>
+        <div class="trip-bottom">
+            <div class="trip-banner flex-center">
+                <img src="./media/icons/sail-boat.svg" alt="boat icon">
+                <h3 class="trip-title text-center">Sight Seeing</h3>
+            </div>
+            <h3>Sight Seeing</h3>
+            <ul>
+                <li>Whale Shark Searching</li>
+                <li>Dolphin Sight Seeing</li>
+                <li>Whake Sight Seeing</li>
+            </ul>
+            <p>Sightseeing is usually dolphins and manatees and possibly turtles as well as lots of nice houses and
+                celebrity houses. Also offer real estate viewing trips from the water. Great way to find waterfront
+                properties.</p>
+            <a href="https://square.site/book/52S7Q95WRDXSE/best-catch-fishing-charters-llc" class="book-button">Book a
+                Trip</a>
+        </div>
+    </div>
+    </div>
 
-                        <div class="price-showcase">
-                            <h3 class="text-center">Full Day</h3>
-                            <div class="price-info">
-                                <span class="text-center">$1,195</span>
-                                <p class="text-center">The Full Day 8 hour minimum is a great way to go after our Limit of Red Grouper as well as Lots of various snapper like mangrove, lane, vermillion.</p>
-                            </div>
-                        </div>
+    <div class="trip-showcase">
+        <div class="bk-img" style="background-image: url(./media/IMG_42721-min.jpg);"></div>
+        <div class="trip-bottom">
+            <div class="trip-banner flex-center">
+                <img src="./media/icons/sail-boat.svg" alt="boat icon">
+                <h3 class="trip-title text-center">Vacation Trips</h3>
+            </div>
+            <h3>Vacation Trips</h3>
+            <p>Destination or vacation trips need to be discussed over the phone as they take a lot of planning but can
+                be super exciting and can include multiple days offshore in the middle grounds or dry tortugas.</p>
+            <a href="https://square.site/book/52S7Q95WRDXSE/best-catch-fishing-charters-llc" class="book-button">Book a
+                Trip</a>
+        </div>
+    </div>
+    </div>
 
-                        <div class="price-showcase">
-                            <h3 class="text-center">Extended Full Day</h3>
-                            <div class="price-info">
-                                <span class="text-center">$1,395</span>
-                                <p class="text-center">Our 10 hour Trip is an excellent trip for the avid fishermen or group that wants the full experience to go after limits of big Red Grouper.</p>
-                            </div>
-                        </div>
+    <!--PRICING-->
+    <h2 id="trips" class="section-title text-center">Pricing</h2>
+    <div id="price-section" class="price-section flex-center">
+        <div class="price-showcase">
+            <h3 class="text-center">1/2 Day</h3>
+            <div class="price-info">
+                <span class="text-center">$595</span>
+                <p class="text-center">1/2 day is a 4 hour trip that we target all types of species and can run up 15
+                    miles or so offshore depending on the seas.</p>
+            </div>
+        </div>
 
-                        <div class="price-showcase">
-                            <h3 class="text-center">12 Hour Deep Dive</h3>
-                            <div class="price-info">
-                                <span class="text-center">$1,595</span>
-                                <p class="text-center">The 12 hour is a great trip to go for all of the above and is the go to Red Snapper and Red Grouper limit trip for the big fish.</p>
-                            </div>
-                        </div>
-                        
-                        <div class="price-showcase">
-                            <h3 class="text-center">2 Day Limit Trips</h3>
-                            <div class="price-info">
-                                <span class="text-center">$2,000</span>
-                                <p class="text-center">The 2 day limit and overnight trips are a call in advance trip as they are essential for the novice or new to the area fisherman to maximize their productivity.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="price-button" class="flex-center">
-                        <a target="_blank" href="https://square.site/book/52S7Q95WRDXSE/best-catch-fishing-charters-llc" class="book-button">Book Now!</a>
-                    </div>
-                    
-                    <!--FOOTER-->
-                    <footer class="flex-center text-center">
-                        <h3>Best Catch Fishing</h3>
-                        <h3>Venice & Englewood</h3>
-                        <a href="tel:+1-941-882-2099">1-941-882-2099</a>
+        <div class="price-showcase">
+            <h3 class="text-center">3/4 Day</h3>
+            <div class="price-info">
+                <span class="text-center">$895</span>
+                <p class="text-center">The 3/4 day is a 6 hour minimum trip that we usually catch bottom fish like Red
+                    and Gag Grouper as well as lots of various types of snapper.</p>
+            </div>
+        </div>
+
+        <div class="price-showcase">
+            <h3 class="text-center">Full Day</h3>
+            <div class="price-info">
+                <span class="text-center">$1,195</span>
+                <p class="text-center">The Full Day 8 hour minimum is a great way to go after our Limit of Red Grouper
+                    as well as Lots of various snapper like mangrove, lane, vermillion.</p>
+            </div>
+        </div>
+
+        <div class="price-showcase">
+            <h3 class="text-center">Extended Full Day</h3>
+            <div class="price-info">
+                <span class="text-center">$1,495</span>
+                <p class="text-center">Our 10 hour Trip is an excellent trip for the avid fishermen or group that wants
+                    the full experience to go after limits of big Red Grouper.</p>
+            </div>
+        </div>
+
+        <div class="price-showcase">
+            <h3 class="text-center">12 Hour Deep Dive</h3>
+            <div class="price-info">
+                <span class="text-center">$1,795</span>
+                <p class="text-center">The 12 hour is a great trip to go for all of the above and is the go to Red
+                    Snapper and Red Grouper limit trip for the big fish.</p>
+            </div>
+        </div>
+
+        <div class="price-showcase">
+            <h3 class="text-center">2 Day Limit Trips</h3>
+            <div class="price-info">
+                <span class="text-center">$2,000</span>
+                <p class="text-center">The 2 day limit and overnight trips are a call in advance trip as they are
+                    essential for the novice or new to the area fisherman to maximize their productivity.</p>
+            </div>
+        </div>
+    </div>
+    <div id="price-button" class="flex-center">
+        <a target="_blank" href="https://square.site/book/52S7Q95WRDXSE/best-catch-fishing-charters-llc"
+            class="book-button">Book Now!</a>
+    </div>
+
+    <!--GALLERY-->
+    <h2 id="gallery-heading" class="section-title text-center">Gallery</h2>
+    <div id="gallery-section" class="flex-center">
+        <div class="col1">
+            <img src="./media/IMG_42721-min.jpg" alt="fishing">
+            <img src="./media/IMG_34491-min.jpg" alt="fishing">
+            <img src="./media/IMG_17871-min.jpg" alt="fishing">
+        </div>
+        <div class="col2">
+            <img src="./media/IMG_34431-min.jpg" alt="fishing">
+            <img src="./media/fish4-min.jpg" alt="fishing">
+            <img src="./media/fish2-min.jpg" alt="fishing">
+        </div>
+        <div id="col3" class="col3">
+            <img src="./media/IMG_33281-min.jpg" alt="fishing">
+            <img src="./media/fish3-min.jpg" alt="fishing">
+            <img src="./media//boat-min.jpg" alt="fishing">
+        </div>
+    </div>
+    
+    <!--ABOUT US-->
+    <h2 id="about-us-heading" class="section-title text-center">About Us</h2>
+    <div id="about-us-section" class="flex-center">
+        <img src="./media/capdanpic-min.jpg" alt="captain dan">
+        <p>We are Federally Reef and Pelagic 6 pack (persons) Gulf of Mexico charter and we carry full insurance and liability on the boat. We have a Liferaft aboard and take safety very seriously. I am CPR and First aid trained for both adults and infants and I have experience rescuing a firefighter who Drowned while diving on a friends commercial boat I was diving on and I was able to get him breathing and revive him after 20 minutes or so and he fully recovered. October 13th 2018. I got a front page article for us and our efforts as he was blue and not breathing.</p>
+    </div>
+    
+    <!--FOOTER-->
+    <footer class="flex-center text-center">
+        <h3>Best Catch Fishing</h3>
+        <h3>Venice & Englewood</h3>
+        <a href="tel:+1-941-882-2099">1-941-882-2099</a>
         <h3>CopyRight 2020 by Best Catch Fishing. All Rights Reserved.</h3>
     </footer>
 
